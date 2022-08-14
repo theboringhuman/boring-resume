@@ -6,19 +6,11 @@ const StyledSection = styled.section`
   margin: 0;
   min-width: 0;
   width: 100%;
-  max-width: 1000px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--s2);
   padding-right: var(--s2);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   padding-top: var(--s2);
   padding-bottom: var(--s2);
   @media (max-width:600px) {

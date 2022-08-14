@@ -4,9 +4,9 @@ import Head from 'next/head';
 import {
   Header,
   HeroComponent,
-  // SocialComponent,
-  // SkillsComponent,
-  // TechStackComponent,
+  SocialComponent,
+  SkillsComponent,
+  TechStackComponent,
   // WorkComponent,
   // ProjectsComponent
 } from '../components';
@@ -26,10 +26,10 @@ const Home: NextPage = () => {
       <Header />
       <StyleMain>
         <HeroComponent />
-        {/* <SocialComponent />
+        <SocialComponent />
         <SkillsComponent />
         <TechStackComponent />
-        <WorkComponent />
+        {/* <WorkComponent />
         <ProjectsComponent /> */}
       </StyleMain>
     </div>
