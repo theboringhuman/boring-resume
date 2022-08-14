@@ -33,7 +33,7 @@ const StyledName = styled.span`
 export const Header = () => {
     return (
         <StyledHeader>
-            <Container>
+            <Container className="">
                 <StyledName>Shashank Rawat </StyledName>
                 <ThemeToggle />
             </Container>

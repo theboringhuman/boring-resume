@@ -1,8 +1,19 @@
+import styled from '@emotion/styled';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import {
-  Header
+  Header,
+  HeroComponent,
+  // SocialComponent,
+  // SkillsComponent,
+  // TechStackComponent,
+  // WorkComponent,
+  // ProjectsComponent
 } from '../components';
+
+const StyleMain = styled.main`
+  margin-top: 6rem;
+`;
 
 const Home: NextPage = () => {
   return (
@@ -12,15 +23,15 @@ const Home: NextPage = () => {
         <meta name="description" content="Resume" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div id="container__main">
-        <Header />
-        {/* <HeroComponent />
-        <SocialComponent />
+      <Header />
+      <StyleMain>
+        <HeroComponent />
+        {/* <SocialComponent />
         <SkillsComponent />
         <TechStackComponent />
         <WorkComponent />
         <ProjectsComponent /> */}
-      </div>
+      </StyleMain>
     </div>
   )
 }

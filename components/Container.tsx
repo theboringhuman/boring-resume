@@ -19,13 +19,17 @@ const StyledSection = styled.section`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: var(--s1);
-  padding-bottom: var(--s1);
+  padding-top: var(--s2);
+  padding-bottom: var(--s2);
+  @media (max-width:600px) {
+    padding-top: var(--s1);
+    padding-bottom: var(--s1);
+  }
 `;
 
-export const Container = ({children}: { children: ReactNode }) => {
+export const Container = ({ children, className }: { children: ReactNode, className: string | undefined }) => {
     return (
-        <StyledSection>
+        <StyledSection className={className}>
             {children}
         </StyledSection>
     )
